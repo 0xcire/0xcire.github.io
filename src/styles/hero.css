@@ -1,0 +1,24 @@
+#hero {
+  height: 75vh;
+  padding-top: 5rem;
+}
+
+.greeting {
+  font-size: var(--font-large);
+}
+
+.brief {
+  font-size: var(--font-medium);
+  margin-top: 0.5rem;
+}
+
+.cta {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: var(--font-base);
+}

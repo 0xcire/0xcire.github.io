@@ -1,0 +1,9 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --font-base: 1.777rem;
+  --font-medium: 2.369rem;
+  --font-large: 3.157rem;
+}
