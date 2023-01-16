@@ -1,3 +1,49 @@
 #contact {
   height: 100vh;
 }
+
+.contact h2 {
+  font-size: var(--font-large);
+}
+
+.social-media {
+  margin-top: 4rem;
+  font-size: var(--font-medium);
+}
+
+.social-link {
+  color: #000;
+  font-size: var(--font-medium);
+}
+
+.github-link {
+  margin-left: 1rem;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: var(--font-base);
+  outline: none;
+  border: none;
+  border: 2px solid black;
+}
+
+.message {
+  resize: none;
+}
+
+.form-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: var(--font-base);
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}

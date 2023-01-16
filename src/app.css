@@ -6,6 +6,7 @@
 @import "./styles/contact.css";
 @import "./styles/footer.css";
 
+/* debug */
 /* * {
   border: 1px solid red;
 } */
@@ -17,10 +18,23 @@
   font-family: Inter, sans-serif;
 }
 
+/* solution for IE? */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
 body {
   position: relative;
 
   width: 100vw;
   height: auto;
-  padding: 0 2rem;
+}
+
+/* layout */
+.hero,
+.portfolio,
+.about,
+.contact {
+  padding: 0 var(--mobile-side-padding);
 }

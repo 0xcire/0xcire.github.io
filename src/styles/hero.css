@@ -1,6 +1,6 @@
 #hero {
-  height: 75vh;
-  padding-top: 5rem;
+  height: calc(100vh - 69px);
+  padding-top: 15rem;
 }
 
 .greeting {
@@ -21,4 +21,9 @@
   cursor: pointer;
   font-weight: 700;
   font-size: var(--font-base);
+}
+
+.cta a {
+  text-decoration: none;
+  color: #000;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/public/tiger.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -29,62 +29,214 @@
   </head>
   <body id="body">
     <!-- nav and etc  -->
-    <div id="header">
-      <p class="name">EC</p>
+    <div id="header" class="header">
+      <p class="name"><a href="#body">EC</a></p>
       <i class="nav-toggle fa-solid fa-bars"></i>
-      <div class="nav-wrapper hidden">
-        <!-- <div class="nav-header"></div> -->
+      <nav class="desktop-nav hidden">
+        <a class="nav-links" href="#portfolio">Portfolio</a>
+        <a class="nav-links" href="#about">About</a>
+        <a class="nav-links" href="#contact">Contact</a>
+      </nav>
+      <div class="mobile-nav hidden">
         <i class="fa-solid fa-x"></i>
         <nav>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a class="nav-links" href="#portfolio">Portfolio</a>
+          <a class="nav-links" href="#about">About</a>
+          <a class="nav-links" href="#contact">Contact</a>
         </nav>
       </div>
     </div>
+    <!-- need to remove from context of sticky container?  -->
+    <!-- <div class="mobile-nav hidden">
+      <i class="fa-solid fa-x"></i>
+      <nav>
+        <a class="nav-links" href="#portfolio">Portfolio</a>
+        <a class="nav-links" href="#about">About</a>
+        <a class="nav-links" href="#contact">Contact</a>
+      </nav>
+    </div> -->
     <!-- greeting  -->
     <!-- AI portrait, and animation  -->
     <!-- type writer animation  -->
     <!-- CTA for viewing portfolio and contact  -->
-    <div id="hero">
+    <!-- animation for nav showing  -->
+    <div id="hero" class="hero">
       <h1 class="greeting">Hello, I'm Eric.</h1>
       <p class="brief">I am a Full Stack Developer.</p>
-      <button class="cta" type="button">View My Portfolio</button>
+      <button class="cta" type="button">
+        <a href="#portfolio">View My Portfolio</a>
+      </button>
     </div>
-    <!-- 3 projects. currently 2 wordpress themes, one JS project  -->
+    <!-- 4 projects. currently 2 wordpress themes, two JS project  -->
     <!-- change after i finish odin project and other personal projects -->
-    <div id="portfolio">
+    <div id="portfolio" class="portfolio">
       <h2>Portfolio</h2>
-      <div class="projects-wrapper"></div>
+      <div class="projects-wrapper">
+        <div class="project-card">
+          <h3 class="project-title">Project Name</h3>
+          <p class="project-desc">
+            A simple site that does things to show things.
+          </p>
+          <!-- make two elements above a hover affect over img for desktop  -->
+          <img
+            class="project-img"
+            src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg"
+            alt="not-real"
+          />
+          <p class="project-tech-stack">Tech Stack...</p>
+          <p class="project-skills">
+            HTML5, CSS3, React, Redux, Node, Express, MongoDB
+          </p>
+          <p class="project-btns">
+            <button class="project-btn code-btn">
+              <i class="fa-solid fa-code"></i>Code
+            </button>
+            <button class="project-btn site-btn">
+              <i class="fa-solid fa-laptop"></i>Site
+            </button>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Project Name</h3>
+          <p class="project-desc">
+            A simple site that does things to show things.
+          </p>
+          <img
+            class="project-img"
+            src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg"
+            alt="not-real"
+          />
+          <p class="project-tech-stack">Tech Stack...</p>
+          <p class="project-skills">
+            HTML5, CSS3, React, Redux, Node, Express, MongoDB
+          </p>
+          <p class="project-btns">
+            <button class="project-btn code-btn">
+              <i class="fa-solid fa-code"></i>Code
+            </button>
+            <button class="project-btn site-btn">
+              <i class="fa-solid fa-laptop"></i>Site
+            </button>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Project Name</h3>
+          <p class="project-desc">
+            A simple site that does things to show things.
+          </p>
+          <img
+            class="project-img"
+            src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg"
+            alt="not-real"
+          />
+          <p class="project-tech-stack">Tech Stack...</p>
+          <p class="project-skills">
+            HTML5, CSS3, React, Redux, Node, Express, MongoDB
+          </p>
+          <p class="project-btns">
+            <button class="project-btn code-btn">
+              <i class="fa-solid fa-code"></i>Code
+            </button>
+            <button class="project-btn site-btn">
+              <i class="fa-solid fa-laptop"></i>Site
+            </button>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3 class="project-title">Project Name</h3>
+          <p class="project-desc">
+            A simple site that does things to show things.
+          </p>
+          <img
+            class="project-img"
+            src="https://images.pexels.com/photos/372787/pexels-photo-372787.jpeg"
+            alt="not-real"
+          />
+          <p class="project-tech-stack">Tech Stack...</p>
+          <p class="project-skills">
+            HTML5, CSS3, React, Redux, Node, Express, MongoDB
+          </p>
+          <p class="project-btns">
+            <button class="project-btn code-btn">
+              <i class="fa-solid fa-code"></i>Code
+            </button>
+            <button class="project-btn site-btn">
+              <i class="fa-solid fa-laptop"></i>Site
+            </button>
+          </p>
+        </div>
+      </div>
+      <!-- add cta to contact  -->
     </div>
     <!-- two col  -->
     <!-- brief bio  -->
-    <!-- section for courses/certifications  -->
+    <!-- section for courses/certifications?  -->
     <!-- section for skills  -->
     <!-- downloadable resume?  -->
-    <div id="about">
+    <div id="about" class="about">
       <h2>About Me</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s.
+      <p class="about-me">
+        I am a Full Stack Developer who started building websites and web apps
+        since my sophomore year of college in 2018. Being a developer, I am not
+        tied down to any one language, however, I have been focusing on my time
+        on Wordpress and React.js and their respective environments.
       </p>
+      <p class="skill">Some of my skills</p>
+      <!-- add text for what each skill is  -->
+      <!-- icons might not be good here  -->
+      <div class="skills-wrapper">
+        <div class="left">
+          <i class="skill-icon fa-brands fa-html5"></i>
+          <i class="skill-icon fa-brands fa-css3"></i
+          ><i class="skill-icon fa-brands fa-square-js"></i>
+          <i class="skill-icon fa-brands fa-wordpress"></i>
+          <i class="skill-icon fa-brands fa-react"></i>
+        </div>
+        <div class="right">
+          <i class="skill-icon fa-brands fa-node"></i
+          ><i class="skill-icon fa-solid fa-database"></i>
+        </div>
+      </div>
     </div>
     <!-- link for github, linkedin  -->
     <!-- email contact form  -->
-    <div id="contact">
+    <div id="contact" class="contact">
       <h2>Get In Contact</h2>
-      <p>Social Media</p>
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-github"></i>
+      <p class="social-media">Social Media</p>
+      <a class="social-link linkedin-link" href="#" target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a class="social-link github-link" href="#" target="_blank"
+        ><i class="fa-brands fa-github"></i
+      ></a>
       <form action="post">
-        <input type="text" name="name" id="name" placeholder="Name" />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input type="text" name="body" id="body" placeholder="Message" />
+        <input
+          class="form-input name"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+        />
+        <input
+          class="form-input email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        />
+        <textarea
+          class="form-input message"
+          name="body"
+          id="body"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+        ></textarea>
       </form>
+      <button class="form-btn" type="submit">Send</button>
     </div>
     <!-- simple copyright footer  -->
-    <div id="footer">
+    <div id="footer" class="footer">
       <p>&copy; 2023 Eric Chi. All rights reserved.</p>
     </div>
     <script type="module" src="./src/app.js"></script>

@@ -1,18 +1,26 @@
 #header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 2rem 0;
+  padding: 2rem;
 
   font-size: var(--font-base);
 }
 
-.fa-solid {
-  /* just for dev purposes  */
-  cursor: pointer;
+.name a {
+  font-size: var(--font-medium);
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
 }
-.nav-wrapper {
+
+.mobile-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,12 +28,16 @@
   height: 100vh;
   background-color: #f4f4f4;
 
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 2rem 8rem 0;
 
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+.fa-x {
+  font-size: var(--font-base);
 }
 
 .hidden {

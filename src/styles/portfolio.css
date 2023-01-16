@@ -1,3 +1,45 @@
 #portfolio {
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
+}
+
+#portfolio h2 {
+  font-size: var(--font-large);
+}
+
+.projects-wrapper {
+  margin: 8rem 0;
+}
+
+.project-card {
+  font-size: var(--font-base);
+  margin-top: 4rem;
+}
+
+.project-img {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-tech-stack {
+  margin: 1rem 0;
+}
+
+.project-btns {
+  margin-top: 1rem;
+}
+
+.project-btn {
+  cursor: pointer;
+  font-size: var(--font-base);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.project-btn i {
+  margin-right: 0.5rem;
 }

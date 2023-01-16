@@ -1,3 +1,20 @@
 #about {
   height: 100vh;
+  font-size: var(--font-base);
+}
+
+.about h2 {
+  font-size: var(--font-large);
+}
+
+.about-me {
+  margin-top: 4rem;
+  line-height: 2.5rem;
+}
+
+.skill {
+  margin: 4rem 0 2rem 0;
+}
+.skill-icon {
+  font-size: var(--font-large);
 }

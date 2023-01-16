@@ -6,4 +6,6 @@ html {
   --font-base: 1.777rem;
   --font-medium: 2.369rem;
   --font-large: 3.157rem;
+
+  --mobile-side-padding: 2rem;
 }
